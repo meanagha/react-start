@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-
+import Product from "./Product";
 function Dashboard({ setIsAuth }) {
   const navigate = useNavigate();
 
@@ -13,6 +13,7 @@ function Dashboard({ setIsAuth }) {
   return (
     <div>
       <h2>Welcome to Dashboard</h2>
+      <Product />
       <button onClick={handleLogout}>Logout</button>
     </div>
   );
